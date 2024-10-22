@@ -1,12 +1,36 @@
 {
   "name": "vite-project-library",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
+  },
+  "main": "./dist/library-styleguide.umd.cjs",
+  "module": "./dist.library-styleguide.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/library-styleguide.js",
+      "require": "./dist/library-styleguide.umd.cjs"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vionijannet/library-styleguide.git"
+  },
+  "files": [
+    "dist",
+    "src/components/"
+  ],
+  "peerDependencies": {
+    "vue": "^3.0.0"
   },
   "dependencies": {
     "vue": "^3.4.21"
