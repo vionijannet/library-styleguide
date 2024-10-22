@@ -1,4 +1,11 @@
+import { Plugin, App } from 'vue';
 import './style.css';
-import Button from "./components/Button.vue";
+import Button from './components/Button.vue';
 
-export { Button };
+const plugin: Plugin = {
+    install(app: App) {
+        app.component("ButtonGista", Button);
+    }
+};
+
+export default plugin;
