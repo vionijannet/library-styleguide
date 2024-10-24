@@ -33,14 +33,17 @@
     "dist"
   ],
   "peerDependencies": {
-    "vue": "^3.0.0",
-    "rxjs": "^7.8.1"
-  },
-  "dependencies": {
     "rxjs": "^7.8.1",
     "vue": "^3.0.0"
   },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "rxjs": "^7.8.1",
+    "v-calendar": "^3.1.2",
+    "vue": "^3.0.0"
+  },
   "devDependencies": {
+    "@types/node": "^22.7.9",
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.20",
     "path": "^0.12.7",
