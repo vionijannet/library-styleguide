@@ -1,7 +1,7 @@
 {
   "name": "vite-project-library",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.8",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,9 +10,9 @@
   },
   "main": "./dist/library-styleguide.umd.cjs",
   "module": "./dist.library-styleguide.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
       "import": "./dist/library-styleguide.js",
       "require": "./dist/library-styleguide.umd.cjs"
     },
@@ -26,8 +26,7 @@
     "url": "git+https://github.com/vionijannet/library-styleguide.git"
   },
   "files": [
-    "dist",
-    "src/components/"
+    "dist/*"
   ],
   "peerDependencies": {
     "vue": "^3.0.0"

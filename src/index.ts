@@ -11,4 +11,5 @@ const plugin: Plugin = {
     }
 };
 
+export * from "./types";
 export default plugin;
