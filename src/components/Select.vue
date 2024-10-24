@@ -51,7 +51,7 @@ defineComponent({
 
 const isOptionExpanded = ref(false);
 
-const props = withDefaults(
+withDefaults(
     defineProps<{
         modelValue: Option | string,
         options: Option[] | string[],
